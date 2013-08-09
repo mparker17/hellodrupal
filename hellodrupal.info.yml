@@ -1,0 +1,4 @@
+name: Hello Drupal
+type: module
+description: 'Hello World module'
+core: 8.x

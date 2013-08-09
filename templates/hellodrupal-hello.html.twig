@@ -1,0 +1,7 @@
+<p>
+{% trans %}
+  Hello {{ person }}!
+{% endtrans %}
+</p>
+
+{{ person|escape('html') }} is how you escape things outside of translation.

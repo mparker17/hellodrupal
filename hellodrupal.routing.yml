@@ -1,0 +1,7 @@
+hellodrupal.hello:
+  pattern: '/hello/{person}'
+  defaults:
+    _content: '\Drupal\hellodrupal\Controller\HelloController::hello'
+  requirements:
+    _permission: 'access content'
+
