@@ -1,7 +1,21 @@
 hellodrupal.hello:
-  pattern: '/hello/{person}'
+  pattern: '/hello/world'
   defaults:
     _content: '\Drupal\hellodrupal\Controller\HelloController::hello'
+  requirements:
+    _permission: 'access content'
+
+hellodrupal.hellojson:
+  pattern: '/hello/json'
+  defaults:
+    _controller: '\Drupal\hellodrupal\Controller\HelloController::helloPage'
+  requirements:
+    _permission: 'access content'
+
+hellodrupal.helloperson:
+  pattern: '/hello/{person}'
+  defaults:
+    _content: '\Drupal\hellodrupal\Controller\HelloController::helloPerson'
   requirements:
     _permission: 'access content'
 
