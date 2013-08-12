@@ -1,4 +1,4 @@
-name: Hello Drupal
+name: YOUR MODULE NAME HERE
 type: module
 description: 'Hello World module'
 core: 8.x

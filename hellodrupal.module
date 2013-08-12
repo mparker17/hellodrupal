@@ -4,27 +4,14 @@
  * Implements hook_menu().
  */
 function hellodrupal_menu() {
-  $items['hello'] = array(
-    'title' => 'Hello Drupal',
-    'description' => 'The requisite hello-world page.',
-    'route_name' => 'hellodrupal.hello',
-  );
 
-  return $items;
+
 }
 
 /**
  * Implements hook_theme().
  */
 function hellodrupal_theme() {
-  return array(
-    'hellodrupal_hello' => array(
-      'variables' => array('person' => NULL),
-      'template' => 'hellodrupal-hello',
-    ),
-    'hellodrupal_hello_block' => array(
-      'variables' => array('person' => NULL),
-      'template' => 'hellodrupal-hello-block',
-    ),
-  );
+
+
 }

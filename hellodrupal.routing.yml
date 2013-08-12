@@ -1,5 +1,5 @@
 hellodrupal.hello:
-  pattern: '/hello/{person}'
+  pattern: '/hello'
   defaults:
     _content: '\Drupal\hellodrupal\Controller\HelloController::hello'
   requirements:
