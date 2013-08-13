@@ -4,14 +4,20 @@
  * Implements hook_menu().
  */
 function hellodrupal_menu() {
-  $items['hello'] = array(
+  $items['hello/world'] = array(
     'title' => 'Hello Drupal',
     'description' => 'The requisite hello-world page.',
     'route_name' => 'hellodrupal.hello',
   );
+  $items['hello/%'] = array(
+    'title' => 'Hello Person',
+    'description' => 'The requisite hello-world page.',
+    'route_name' => 'hellodrupal.helloperson',
+  );
 
   return $items;
 }
+
 
 /**
  * Implements hook_theme().
