@@ -28,9 +28,5 @@ function hellodrupal_theme() {
       'variables' => array('person' => NULL),
       'template' => 'hellodrupal-hello',
     ),
-    'hellodrupal_hello_block' => array(
-      'variables' => array('person' => NULL),
-      'template' => 'hellodrupal-hello-block',
-    ),
   );
 }
